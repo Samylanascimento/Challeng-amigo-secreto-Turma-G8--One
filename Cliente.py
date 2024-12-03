@@ -34,7 +34,7 @@ def send_request(request_data):
         response_data = cipher_suite.decrypt(encrypted_response).decode()
         
         return json.loads(response_data)
-
+    
 # Funções para operações de autenticação, envio de mensagem e criação de usuário
 def autenticar_usuario():
     nickname = entry_nickname.get()
